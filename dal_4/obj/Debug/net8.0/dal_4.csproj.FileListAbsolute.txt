@@ -1,0 +1,12 @@
+D:\Back_end_1\E_commerce_3\dal_4\bin\Debug\net8.0\dal_4.deps.json
+D:\Back_end_1\E_commerce_3\dal_4\bin\Debug\net8.0\dal_4.dll
+D:\Back_end_1\E_commerce_3\dal_4\bin\Debug\net8.0\dal_4.pdb
+D:\Back_end_1\E_commerce_3\dal_4\obj\Debug\net8.0\dal_4.csproj.AssemblyReference.cache
+D:\Back_end_1\E_commerce_3\dal_4\obj\Debug\net8.0\dal_4.GeneratedMSBuildEditorConfig.editorconfig
+D:\Back_end_1\E_commerce_3\dal_4\obj\Debug\net8.0\dal_4.AssemblyInfoInputs.cache
+D:\Back_end_1\E_commerce_3\dal_4\obj\Debug\net8.0\dal_4.AssemblyInfo.cs
+D:\Back_end_1\E_commerce_3\dal_4\obj\Debug\net8.0\dal_4.csproj.CoreCompileInputs.cache
+D:\Back_end_1\E_commerce_3\dal_4\obj\Debug\net8.0\dal_4.dll
+D:\Back_end_1\E_commerce_3\dal_4\obj\Debug\net8.0\refint\dal_4.dll
+D:\Back_end_1\E_commerce_3\dal_4\obj\Debug\net8.0\dal_4.pdb
+D:\Back_end_1\E_commerce_3\dal_4\obj\Debug\net8.0\ref\dal_4.dll
