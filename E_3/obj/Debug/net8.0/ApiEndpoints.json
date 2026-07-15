@@ -1,25 +1,9 @@
 [
   {
     "ContainingType": "E_3.Controllers.firstAPI",
-    "Method": "insert",
-    "RelativePath": "api/firstAPI",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "p",
-        "Type": "dal_4.product_dto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "E_3.Controllers.firstAPI",
-    "Method": "product_info",
-    "RelativePath": "api/firstAPI",
-    "HttpMethod": "GET",
+    "Method": "sell",
+    "RelativePath": "api/firstAPI/for_sell",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -29,7 +13,47 @@
         "IsRequired": false
       },
       {
-        "Name": "type",
+        "Name": "amount",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "E_3.Controllers.firstAPI",
+    "Method": "product_info",
+    "RelativePath": "api/firstAPI/get_info",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
         "Type": "System.String",
         "IsRequired": false
       }
@@ -45,5 +69,21 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "E_3.Controllers.firstAPI",
+    "Method": "insert",
+    "RelativePath": "api/firstAPI/insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "p",
+        "Type": "dal_4.product_dto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
