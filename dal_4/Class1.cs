@@ -37,7 +37,7 @@ namespace dal_4
                     cmd.Parameters.AddWithValue("@name", p.name);
                     cmd.Parameters.AddWithValue("@amount", p.amount);
                     cmd.Parameters.AddWithValue("@price", p.price);
-                    var outputid = new SqlParameter("@id", SqlDbType.Int)
+                    var outputid = new SqlParameter("@id_for_products", SqlDbType.Int)
                     {
                         Direction = ParameterDirection.Output
                     };
@@ -48,14 +48,13 @@ namespace dal_4
             }
         }
 
-        public static product_dto list_info(string type, string name)
+        public static product_dto list_info(string name)
         {
             using (SqlConnection cnct = new SqlConnection(connection_string))
             {
                 using (SqlCommand cmd = new SqlCommand("sp_list_info", cnct))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@type", type);
                     cmd.Parameters.AddWithValue("@name", name);
                     cnct.Open();
                     using (SqlDataReader reader = cmd.ExecuteReader())
@@ -77,6 +76,28 @@ namespace dal_4
             }
         }
 
+        public static int sell(string name, int amount)
+        {
+            int result=0;
+            using (SqlConnection cnct=new SqlConnection(connection_string))
+            {
+                using(SqlCommand cmd=new SqlCommand("sp_sell",cnct))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@name", name);
+                    cmd.Parameters.AddWithValue("@amount", amount);
+                    cnct.Open();
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if(reader.Read())
+                        {
+                            result= reader.GetInt32(reader.GetOrdinal("result"));
+                        }
+                        return result;
+                    }
+                }
+            }
+        }
 
     }
 }
