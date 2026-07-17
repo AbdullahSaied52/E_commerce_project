@@ -1,0 +1,12 @@
+D:\Back_end_1\E_commerce_project\class_1_DTO\bin\Debug\net8.0\class_1_DTO.deps.json
+D:\Back_end_1\E_commerce_project\class_1_DTO\bin\Debug\net8.0\class_1_DTO.dll
+D:\Back_end_1\E_commerce_project\class_1_DTO\bin\Debug\net8.0\class_1_DTO.pdb
+D:\Back_end_1\E_commerce_project\class_1_DTO\obj\Debug\net8.0\class_1_DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\Back_end_1\E_commerce_project\class_1_DTO\obj\Debug\net8.0\class_1_DTO.AssemblyInfoInputs.cache
+D:\Back_end_1\E_commerce_project\class_1_DTO\obj\Debug\net8.0\class_1_DTO.AssemblyInfo.cs
+D:\Back_end_1\E_commerce_project\class_1_DTO\obj\Debug\net8.0\class_1_DTO.csproj.CoreCompileInputs.cache
+D:\Back_end_1\E_commerce_project\class_1_DTO\obj\Debug\net8.0\class_1_DTO.sourcelink.json
+D:\Back_end_1\E_commerce_project\class_1_DTO\obj\Debug\net8.0\class_1_DTO.dll
+D:\Back_end_1\E_commerce_project\class_1_DTO\obj\Debug\net8.0\refint\class_1_DTO.dll
+D:\Back_end_1\E_commerce_project\class_1_DTO\obj\Debug\net8.0\class_1_DTO.pdb
+D:\Back_end_1\E_commerce_project\class_1_DTO\obj\Debug\net8.0\ref\class_1_DTO.dll
