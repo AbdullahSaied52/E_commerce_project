@@ -1,30 +1,13 @@
 ﻿using Microsoft.Data.SqlClient;
 using System.Data;
+using class_1_DTO;
 
 namespace dal_4
 {
-    public class product_dto
-    {
-        public int id      {get;set;} 
-        public string type {get;set;}
-        public string name {get;set;}
-        public int amount  {get;set;}
-        public int price { get; set; }
 
-        public product_dto(int id, string name, string type, int amount, int price)
-        {
-            this.id = id;
-            this.name = name;
-            this.type = type;
-            this.price = price;
-            this.amount = amount;
-        }
-    }
     public class dal
     {
         static string connection_string = "Server=localhost;Database=My_Products;Integrated Security=True;TrustServerCertificate=True";
-
-
 
         public static void insert(product_dto p)
         {

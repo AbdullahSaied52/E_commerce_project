@@ -461,6 +461,16 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
+      },
+      "class_1_DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/class_1_DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/class_1_DTO.dll": {}
+        }
       }
     }
   },
@@ -1193,11 +1203,17 @@
         "system.security.cryptography.protecteddata.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "class_1_DTO/1.0.0": {
+      "type": "project",
+      "path": "../class_1_DTO/class_1_DTO.csproj",
+      "msbuildProject": "../class_1_DTO/class_1_DTO.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Microsoft.Data.SqlClient >= 7.0.2"
+      "Microsoft.Data.SqlClient >= 7.0.2",
+      "class_1_DTO >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1231,7 +1247,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Back_end_1\\E_commerce_project\\class_1_DTO\\class_1_DTO.csproj": {
+              "projectPath": "D:\\Back_end_1\\E_commerce_project\\class_1_DTO\\class_1_DTO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

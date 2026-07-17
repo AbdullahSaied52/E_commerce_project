@@ -23,3 +23,6 @@ D:\Back_end_1\E_commerce_project\dal_4\obj\Debug\net8.0\dal_4.dll
 D:\Back_end_1\E_commerce_project\dal_4\obj\Debug\net8.0\refint\dal_4.dll
 D:\Back_end_1\E_commerce_project\dal_4\obj\Debug\net8.0\dal_4.pdb
 D:\Back_end_1\E_commerce_project\dal_4\obj\Debug\net8.0\ref\dal_4.dll
+D:\Back_end_1\E_commerce_project\dal_4\bin\Debug\net8.0\class_1_DTO.dll
+D:\Back_end_1\E_commerce_project\dal_4\bin\Debug\net8.0\class_1_DTO.pdb
+D:\Back_end_1\E_commerce_project\dal_4\obj\Debug\net8.0\dal_4.csproj.Up2Date
