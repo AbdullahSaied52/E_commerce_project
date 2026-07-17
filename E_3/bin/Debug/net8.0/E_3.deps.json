@@ -8,8 +8,9 @@
     ".NETCoreApp,Version=v8.0": {
       "E_3/1.0.0": {
         "dependencies": {
+          "BLL": "1.0.0",
           "Swashbuckle.AspNetCore": "6.6.2",
-          "dal_4": "1.0.0"
+          "class_1_DTO": "1.0.0"
         },
         "runtime": {
           "E_3.dll": {}
@@ -372,9 +373,30 @@
           }
         }
       },
+      "BLL/1.0.0": {
+        "dependencies": {
+          "class_1_DTO": "1.0.0",
+          "dal_4": "1.0.0"
+        },
+        "runtime": {
+          "BLL.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "class_1_DTO/1.0.0": {
+        "runtime": {
+          "class_1_DTO.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "dal_4/1.0.0": {
         "dependencies": {
-          "Microsoft.Data.SqlClient": "7.0.2"
+          "Microsoft.Data.SqlClient": "7.0.2",
+          "class_1_DTO": "1.0.0"
         },
         "runtime": {
           "dal_4.dll": {
@@ -593,6 +615,16 @@
       "sha512": "sha512-+TUFINV2q2ifyXauQXRwy4CiBhqvDEDZeVJU7qfxya4aRYOKzVBpN+4acx25VcPB9ywUN6C0n8drWl110PhZEg==",
       "path": "system.security.cryptography.protecteddata/8.0.0",
       "hashPath": "system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
+    },
+    "BLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "class_1_DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "dal_4/1.0.0": {
       "type": "project",

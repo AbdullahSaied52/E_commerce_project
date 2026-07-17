@@ -153,3 +153,7 @@ D:\Back_end_1\E_commerce_project\E_3\obj\Debug\net8.0\refint\E_3.dll
 D:\Back_end_1\E_commerce_project\E_3\obj\Debug\net8.0\E_3.pdb
 D:\Back_end_1\E_commerce_project\E_3\obj\Debug\net8.0\E_3.genruntimeconfig.cache
 D:\Back_end_1\E_commerce_project\E_3\obj\Debug\net8.0\ref\E_3.dll
+D:\Back_end_1\E_commerce_project\E_3\bin\Debug\net8.0\BLL.dll
+D:\Back_end_1\E_commerce_project\E_3\bin\Debug\net8.0\class_1_DTO.dll
+D:\Back_end_1\E_commerce_project\E_3\bin\Debug\net8.0\BLL.pdb
+D:\Back_end_1\E_commerce_project\E_3\bin\Debug\net8.0\class_1_DTO.pdb

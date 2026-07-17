@@ -60,13 +60,22 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "dal_4.product_dto",
+        "Type": "class_1_DTO.product_dto",
         "MediaTypes": [
           "text/plain",
           "application/json",
           "text/json"
         ],
         "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
       }
     ]
   },
@@ -80,7 +89,7 @@
     "Parameters": [
       {
         "Name": "p",
-        "Type": "dal_4.product_dto",
+        "Type": "class_1_DTO.product_dto",
         "IsRequired": true
       }
     ],

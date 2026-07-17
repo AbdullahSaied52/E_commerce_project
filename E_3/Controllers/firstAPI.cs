@@ -1,6 +1,7 @@
-﻿using dal_4;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using class_1_DTO;
+using BLL;
 
 namespace E_3.Controllers
 {
@@ -11,7 +12,7 @@ namespace E_3.Controllers
         [HttpPost("insert")]
         public ActionResult insert(product_dto p)
         {
-            dal.insert(p);
+            ClsBLL.insert(p);
             return Ok("add");
         }
 
@@ -20,7 +21,7 @@ namespace E_3.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ActionResult<product_dto> product_info(string name)
         {
-            var find = dal.list_info( name);
+            var find = ClsBLL.info( name);
             if (find != null)
             {
                 return Ok(find);
@@ -35,7 +36,7 @@ namespace E_3.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ActionResult sell(string name,int amount)
         {
-            int result = dal.sell(name, amount);
+            int result = ClsBLL.sell(name, amount);
             if (result == 1)
             {
                 return Ok("selled");

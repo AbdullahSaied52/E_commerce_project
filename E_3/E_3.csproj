@@ -11,7 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\dal_4\dal_4.csproj" />
+    <ProjectReference Include="..\BLL\BLL.csproj" />
+    <ProjectReference Include="..\class_1_DTO\class_1_DTO.csproj" />
   </ItemGroup>
 
 </Project>
