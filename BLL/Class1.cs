@@ -19,5 +19,10 @@ namespace BLL
             return dal.sell(name, amount);
         }
 
+        public static int login(string name,string pass)
+        {
+            return dal.login(name, pass);
+        }
+
     }
 }
