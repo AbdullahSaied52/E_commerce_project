@@ -1,2 +1,4 @@
-# E_commerce_project
-I built this project to practice on (API with .net) 
+# E\_commerce\_project
+
+I'm still working on this project, started it to practice on (API with .net)
+
