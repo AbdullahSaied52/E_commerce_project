@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using class_1_DTO;
 using BLL;
+using Microsoft.AspNetCore.Authorization;
 
 namespace E_3.Controllers
 {
@@ -9,7 +10,16 @@ namespace E_3.Controllers
     [ApiController]
     public class firstAPI : ControllerBase
     {
+        [HttpPost("login")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public ActionResult login(string username,string password)
+        {
+            return ClsBLL.login(username, password) == 1 ? Ok("welcome") : NotFound("not authorized");
+        }
+
         [HttpPost("insert")]
+        //[Authorize]
         public ActionResult insert(product_dto p)
         {
             ClsBLL.insert(p);
@@ -17,6 +27,7 @@ namespace E_3.Controllers
         }
 
         [HttpGet("get_info")]
+        //[Authorize]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ActionResult<product_dto> product_info(string name)
@@ -31,6 +42,7 @@ namespace E_3.Controllers
         }
 
         [HttpPut("for_sell")]
+        //[Authorize]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
