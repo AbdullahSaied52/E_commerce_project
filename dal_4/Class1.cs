@@ -82,6 +82,22 @@ namespace dal_4
             }
         }
 
+        public static int login(string username,string pass)
+        {
+            using (SqlConnection cnct = new SqlConnection(connection_string))
+            {
+                using(SqlCommand cmd=new SqlCommand("sp_login",cnct))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@username", username);
+                    cmd.Parameters.AddWithValue("@password", pass);
+                    cnct.Open();
+                    return  (int)cmd.ExecuteScalar();
+
+                }
+            }
+        }
+
     }
 }
 
